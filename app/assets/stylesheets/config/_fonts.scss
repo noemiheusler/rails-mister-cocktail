@@ -5,6 +5,27 @@
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
 
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: 'Roboto', ;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: 'Roboto', ;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

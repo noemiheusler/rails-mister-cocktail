@@ -1,2 +1,8 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<h1><%= @cocktail.name %></h1>
+<div class="container-show">
+  <img class="cocktail-pic" src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="">
+  <h2>This drink consists of</h2>
+    <%@cocktail.doses.each do |dose| %>
+      <p><%= dose.description %></p>
+    <% end %>
+</div>
