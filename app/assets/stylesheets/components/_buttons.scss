@@ -1,0 +1,20 @@
+.btn-ghost {
+  color: #ffeadb;
+  border: 1px solid #ffeadb;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  width: 300px;
+  margin: auto;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.input-field {
+  border-radius: 50px;
+  background-color: #ce0f3d;
+}
