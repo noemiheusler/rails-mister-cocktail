@@ -15,6 +15,7 @@ body {
   width:300px;
   height:180px;
   margin: auto;
+  margin-bottom: 25px;
 }
 
 .one-drink-container {
@@ -33,4 +34,15 @@ body {
   p {
     text-align: center;
   }
+}
+
+.item-row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+}
+
+#dose-descr {
+  margin-right: 15px;
 }

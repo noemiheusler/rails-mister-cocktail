@@ -20,9 +20,9 @@
 
 .navbar {
   margin-bottom: 25px;
-  color: #11121A;
+  color: #11121A !important;
   font-weight: bold;
-  background-color: #FFEADB;
+  background-color: #FFEADB !important;
 }
 
 .footer {
@@ -31,7 +31,9 @@
     line-height: 60px;
     background-color: #FFEADB;
     clear: both;
+    font-weight: bold;
     position: relative;
     margin-top: -60px;
-    color: #11121A;
+    color: #11121A !important;
+    margin-top: 25px;
 }
