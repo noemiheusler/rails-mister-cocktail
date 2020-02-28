@@ -26,7 +26,11 @@
 </div>
 
 <div class=container>
-  <a class="btn btn-ghost" href="http://localhost:3000/cocktails/new">Add a cocktail</a>
+  <div class="item-row">
+  <%= link_to new_cocktail_path do %>
+        <button class="btn btn-ghost">Add a cocktail</button>
+  <% end %>
+  </div>
 </div>
 
 <div class=container>

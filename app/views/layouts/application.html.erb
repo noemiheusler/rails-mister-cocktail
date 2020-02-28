@@ -15,7 +15,9 @@
   <body>
     <!-- As a link -->
     <nav class="navbar navbar-light bg-light ">
-      <a class="navbar-brand" href="http://localhost:3000/cocktails/">Mr. Cocktail</a>
+      <%= link_to cocktails_path do%>
+        <p class="navbar-brand">Mr. Cocktail</p>
+      <%end%>
     </nav>
     <%= yield %>
 
