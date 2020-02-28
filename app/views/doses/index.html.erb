@@ -1,10 +1,8 @@
 <h1>Doses#index</h1>
 
+<%= cl_image_tag("lsrihaf9s1xonzemggz1",
+      width: 400, height: 300, crop: :fill) %>
 
 
-
-<%@doses.each do |dose|%>
-  <%= dose.cocktail.name  %>
-  <%= dose.description  %>
-  <%= link_to "Remove", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }%>
-<%end%>
+<%= cl_image_tag("o07bfmze7pe2kzl8gr20",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>

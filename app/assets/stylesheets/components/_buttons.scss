@@ -11,6 +11,40 @@
   margin-bottom: 25px;
 }
 
+.header-text{
+  border-radius: 50px;
+  color: #11121A !important;
+}
+
+.header-btn {
+  border: 1px solid #ffeadb;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 25px;
+  background-color: transparent;
+}
+
+.upload-photo {
+  margin-top: 25px;
+  color: #ffeadb;
+  border: 1px solid #ffeadb;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 25px;
+  text-align:center;
+}
+
 .btn-primary {
   color: #ffeadb;
   border: 1px solid #ffeadb;

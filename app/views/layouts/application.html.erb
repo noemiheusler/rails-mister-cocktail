@@ -6,7 +6,6 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,6 +14,15 @@
   <body>
     <!-- As a link -->
     <nav class="navbar navbar-light bg-light ">
+      <form action="/cocktails" method="GET">
+        <% if params[:search].blank? %>
+          <input type="text" name="search" placeholder="Type something" class="header-text">
+        <% else %>
+          <input type="text" name="search" class="header-text" value= <%= params[:search] %> >
+        <% end %>
+        <input type="submit" value="Submit" class="header-btn">
+      </form>
+
       <%= link_to cocktails_path do%>
         <p class="navbar-brand">Mr. Cocktail</p>
       <%end%>

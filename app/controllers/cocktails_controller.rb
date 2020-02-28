@@ -2,7 +2,11 @@ class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show]
 
   def index
-    @cocktails = Cocktail.all
+    if params[:search].blank?
+      @cocktails = Cocktail.all
+    else
+      @cocktails = Cocktail.where("name LIKE '%#{params[:search]}%'")
+    end
   end
 
   def show
@@ -25,11 +29,10 @@ class CocktailsController < ApplicationController
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 
   def set_cocktail
     @cocktail = Cocktail.find(params[:id])
   end
 end
-
