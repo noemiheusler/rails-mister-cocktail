@@ -8,10 +8,30 @@
   transition: opacity 0.3s ease;
   width: 300px;
   margin: auto;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  color: #ffeadb;
+  border: 1px solid #ffeadb;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  width: 300px;
+  margin: auto;
+  background-color: #11121A;
 }
 
 .btn-ghost:hover {
-  opacity: 1;
+  color: white;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #11121A;
+  border-color: #ffeadb;
 }
 
 .input-field {

@@ -12,3 +12,20 @@ $light-gray: #F4F4F4;
 .navbar {
   background-color: #ffeadb;
 }
+
+.modal-content {
+  background-color: #11121A !important;
+}
+
+.close {
+  color: #ffeadb !important;
+}
+
+.close:hover {
+  color: white;
+}
+
+.form-control {
+  background-color: #ffeadb !important;
+  border-radius: 50px !important;
+}

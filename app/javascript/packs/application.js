@@ -18,3 +18,6 @@ import 'bootstrap';
 
 console.log('Hello World from Webpacker')
 
+setTimeout(function() {
+    $('#myModal').modal();
+}, 2000);
